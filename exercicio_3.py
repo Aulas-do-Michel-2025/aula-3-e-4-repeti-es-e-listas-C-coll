@@ -1,3 +1,4 @@
+"""
 #### Exercício 3 - Comparando listas.
 
 Receba duas listas de input do usuário. Ele digitará como um texto com os números separados por vígula. 
@@ -28,15 +29,17 @@ Resposta:
 Ambas
 """
 
-# Código para pegar as listas de input
-primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os números por vírgula): ").split(","))]
-segunda_lista = [*map(int, input("Digite a sua segunda lista (separando os números por vírgula): ").split(","))]
+# Código para pegar as listas de input 
+primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os números por vírgula): ").split(","))] 
+segunda_lista = [*map(int, input("Digite a sua segunda lista (separando os números por vírgula): ").split(","))] 
+
+# Fazer a partir daqui
 
 # Encontrar o maior número em cada lista
 maior_primeira = max(primeira_lista)
 maior_segunda = max(segunda_lista)
 
-# Comparar os maiores valores
+# Comparar os maiores valores e imprimir a resposta correta
 if maior_primeira > maior_segunda:
     print("Primeira")
 elif maior_segunda > maior_primeira:
